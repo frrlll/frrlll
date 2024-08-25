@@ -86,10 +86,10 @@
 .social-buttons ul li a {
     display: block;
     position: relative;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
     text-align: center;
     text-decoration: none;
     color: #0b6108;
