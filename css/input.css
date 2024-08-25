@@ -21,6 +21,15 @@
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
 }
 
+@media (max-width:420px) {
+    .social-buttons ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+}
+
 @media (max-width:787px) {
     .menu {
         position: fixed;
@@ -61,14 +70,14 @@
 }
 
 .social-buttons ul {
-   /* position: absolute; */
+    /* position: absolute; */
     /* top: 50%; */
     /* left: 50%; */
     /* transform: translate(-50%, -50%); */
     margin: 0;
     padding: 0;
     display: flex;
-} 
+}
 
 .social-buttons ul li {
     list-style: none;
