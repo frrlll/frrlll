@@ -349,7 +349,7 @@ legend {
   padding: 0;
 }
 
-ol,
+/* ol, */
 ul,
 menu {
   list-style: none;
@@ -776,6 +776,10 @@ video {
   height: 100%;
 }
 
+.h-\[80px\] {
+  height: 80px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -835,6 +839,26 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[600px\] {
+  width: 600px;
+}
+
+.w-\[700px\] {
+  width: 700px;
+}
+
+.w-\[800px\] {
+  width: 800px;
 }
 
 .max-w-2xl {
@@ -990,6 +1014,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-red-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 
 .object-fill {
