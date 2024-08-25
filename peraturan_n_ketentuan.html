@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amardeep kesharwani">
+    <title>Education</title>
+    <!-- <link rel="stylesheet" href="temp/tailwind.css"> -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="w-full px-0 md:px-10 py-3 fixed top-0 left-0 right-0 z-10 transition-all" id="nav">
+        <div class="flex justify-between items-center container m-auto px-4 md:px-10">
+            <a href="#" class="logo text-md md:text-2xl font-bold text-lime-600">
+                <img src="https://d25uxujecyj4wm.cloudfront.net/wp-content/uploads/2024/07/image-logo-harhubnas-2024-1.png"
+                    class="h-16 w-16 m-5 mr-2 inline-block transform md:scale-150" alt=""></a>
+            <div>
+
+                <div class="menu">
+                    <button class="hidden nav-close-btn mt-4 ml-5 p-1 focus:outline-none" onclick="navClose()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <!-- relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-emerald-800 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left -->
+                    <ul class="flex">
+                        <li><a href="#"
+                                class="px-4 py-2 mx-1 text-lg font-semibold text-gray-800 hover:text-emerald-800">Beranda</a>
+                        </li>
+                        <li><a href="#"
+                                class="px-4 py-2 mx-1  text-lg font-semibold text-gray-800 hover:text-emerald-800">Peraturan
+                                & Ketentuan</a>
+                        </li>
+                        <li><a href="#"
+                                class="px-4 py-2 mx-1 text-lg font-semibold text-gray-800 hover:text-emerald-800">Rute</a>
+                        </li>
+                        <li><a href="#"
+                                class="px-4 py-2 mx-1 text-lg font-semibold text-gray-800 hover:text-emerald-800">Pendaftaran</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <!-- <a href="#" class="px-2 md:px-4 py-1 md:py-2 text-sm transition-all font-semibold text-gray-800 hover:text-white hover:bg-purple-500 mr-2  bg-gray-100 rounded-md">Log in</a>
+                <a href="#" class="px-2 md:px-4 py-1 md:py-2 text-sm transition-all font-semibold text-purple-500 hover:text-white hover:bg-purple-500 bg-gray-100 rounded-md">join Us</a> -->
+                    <button class="hidden nav-open-btn ml-1 focus:outline-none" onclick="navOpen()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <header class="header">
+        <div
+            class="header-container min-h-screen flex flex-col md:flex-row-reverse items-center px-10 container m-auto">
+            <div class="px-8 py-6 w-full md:w-3/6 mt-20 md:mt-1">
+                <img src="./img/image-hero.png" class="w-full rounded-full" alt="">
+            </div>
+            <div class="h-full w-full md:w-3/6 md:mb-5">
+                <p class="text-gray-600 mb-6 mt-2"><b>HUBRUN 2024: Maju Bersama untuk Transportasi Indonesia yang Lebih
+                        Baik!</b><br>
+
+                    <br>
+                    Acara ini merupakan hasil kolaborasi antara pemerintah, media, dan berbagai pihak terkait untuk
+                    mendukung pengembangan transportasi di Indonesia.
+                    <br>
+                    Yuk, daftarkan dirimu sekarang dan jadi bagian dari gerakan ini!
+                </p>
+                <a href="https://forms.gle/1mixMgkRAucdQDHq6"
+                    class="px-6 py-2 text-sm font-semibold text-white bg-emerald-700 hover:bg-emerald-600 ease-in-out duration-200 mr-2 rounded-md">Daftar
+                    Sekarang</a>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="sec1 p-5 container m-auto">
+        <div class="flex justify-center">
+            <img src="./img/tentang_acara.png" class="w-[300px] h-[48px]" alt="">
+            <!-- <h1 class="inline-block text-3xl font-bold">Our Courses</h1> -->
+            <span class="rounded absolute w-56 bg-purple-600 inline-block "></span>
+        </div>
+        <div class="mt-16 mb-10 overflow-x-auto">
+            <p class="px-3 md:px-4 py-2 mx-1 md:mx-2 focus:outline-none text-center">HUBRUN menjadi momentum bagi
+                masyarakat di Kabupaten Kepulauan Anambas untuk ikut serta dalam memeriahkan perayaan Hari Perhubungan
+                Nasional (HARHUBNAS). Melalui momentum HARHUBNAS 2024 dengan tema ‘Transportasi Maju, Nusantara Baru’,
+                HUBRUN menjadi simbol kolaborasi sektor dan elemen bangsa yang siap bergerak menuju terciptanya
+                transportasi maju dengan pengembangan infrastruktur dan peningkatan pelayanan bagi masyarakat untuk
+                mewujudkan visi transportasi maju. Juga menjadi wujud kolaboratif Bandar Udara Letung-Anambas dalam
+                meningkatkan keterlibatan dan dukungan masyarakat pada setiap kegiatan di Bandar Udara Letung-Anambas.
+            </p>
+
+            <p class="px-3 md:px-4 py-2 mx-1 md:mx-2 focus:outline-none text-center">
+                HUBRUN diselenggarakan sebagai kolaborasi Kementerian Perhubungan RI bersama dengan Bandar Udara
+                Letung-Anambas, dan didukung oleh masyarakat Kabupaten Kepulauan Anambas. HUBRUN 2024 menggerakan
+                masyarakat Kabupaten Kepulauan Anambas untuk saling terhubung dengan penuh semangat keberagaman, dan
+                merayakan momen perubahan besar di Indonesia.</p>
+        </div>
+    </section>
+
+    <section class="sec2 p-10 container m-auto">
+        <div class="flex justify-center">
+            <img src="./img/kategori_lomba.png" class="w-[300px] h-[48px]" alt="">
+            <span class="rounded absolute w-32 bg-emerald-600 inline-block "></span>
+        </div>
+
+        <div class="md:flex sm:flex-col md:flex-row justify-center md:p-10 mt-10">
+            <div class="md:px-8 w-full md:w-2/5">
+                <img src="./img/kategori_pria.png" alt="">
+            </div>
+            <div class="md:p-4 mt-2 md:mt-0 w-full md:w-1/2">
+                <h2 class="text-2xl font-bold mt-0">5.000 Laki-laki</h2>
+                <p class="text-gray-600 mt-2 mb-4 text-sm">Terbuka untuk pria Warga Negara Indonesia
+                    <b>(WNI)</b> berusia <b>minimal 17 tahun</b> saat hari lomba
+                </p>
+                <a href="#"
+                    class="px-6 py-2 text-sm font-semibold text-white bg-emerald-700 hover:bg-emerald-600 rounded-md">Pelajari
+                    lebih
+                    lanjut</a>
+            </div>
+        </div>
+
+        <div class="md:flex justify-center md:p-10 mt-10 felx-col md:flex-row-reverse">
+            <div class="md:px-8 w-full md:w-2/5">
+                <img src="./img/kategori_wanita.png" alt="">
+            </div>
+            <div class="md:p-4 mt-2 md:mt-0 w-full md:w-1/2">
+                <h2 class="text-2xl font-bold mt-0">5.000 Perempuan</h2>
+                <p class="text-gray-600 mt-2 mb-4 text-sm">Terbuka untuk wanita Warga Negara Indonesia
+                    <b>(WNI)</b> berusia <b>minimal 14 tahun</b> saat hari lomba
+                </p>
+                <a href="#"
+                    class="px-6 py-2 text-sm font-semibold text-emerald-700 bg-white border border-emerald-700  rounded-md hover:text-emerald-600 hover:border-emerald-600">Pelajari
+                    lebih lanjut</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- <section class="sec3 p-10 container  m-auto bg-gray-100">
+        <div class="subtitle text-center relative">
+            <h1 class="inline-block text-3xl font-bold">SPONSORED BY</h1>
+            <span class="rounded absolute w-48 bg-emerald-600 inline-block "></span>
+        </div>
+
+
+        <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 md:p-10">
+            <div>
+                <div class="flex items-center">
+                    <img src="./img/003.jpg" alt="" class="h-12 w-12 object-fill">
+                    <h1 class="text-purple-500 font-bold text-lg p-2">Heading Text</h1>
+                </div>
+                <p class="mt-1 text-gray-600 my-5 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque reprehenderit </p>
+            </div>
+            <div>
+                <div class="flex items-center">
+                    <img src="./img/003.jpg" alt="" class="h-12 w-12 object-fill">
+                    <h1 class="text-purple-500 font-bold text-lg p-2">Heading Text</h1>
+                </div>
+                <p class="mt-1 text-gray-600 my-5 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque reprehenderit </p>
+            </div>
+            <div>
+                <div class="flex items-center">
+                    <img src="./img/003.jpg" alt="" class="h-12 w-12 object-fill">
+                    <h1 class="text-purple-500 font-bold text-lg p-2">Heading Text</h1>
+                </div>
+                <p class="mt-1 text-gray-600 my-5 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque reprehenderit </p>
+            </div>
+            <div>
+                <div class="flex items-center">
+                    <img src="./img/003.jpg" alt="" class="h-12 w-12 object-fill">
+                    <h1 class="text-purple-500 font-bold text-lg p-2">Heading Text</h1>
+                </div>
+                <p class="mt-1 text-gray-600 my-5 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque reprehenderit </p>
+            </div>
+            <div>
+                <div class="flex items-center">
+                    <img src="./img/003.jpg" alt="" class="h-12 w-12 object-fill">
+                    <h1 class="text-purple-500 font-bold text-lg p-2">Heading Text</h1>
+                </div>
+                <p class="mt-1 text-gray-600 my-5 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque reprehenderit </p>
+            </div>
+            <div>
+                <div class="flex items-center">
+                    <img src="./img/003.jpg" alt="" class="h-12 w-12 object-fill">
+                    <h1 class="text-purple-500 font-bold text-lg p-2">Heading Text</h1>
+                </div>
+                <p class="mt-1 text-gray-600 my-5 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque reprehenderit </p>
+            </div>
+        </div>
+
+    </section> -->
+    <section class="sec4 p-10 container  m-auto">
+        <div class="mt-20 mb-12">
+            <div class="bg-purple-100 flex w-full max-w-lg mx-auto rounded overflow-hidden p-3">
+                <input type="text" placeholder="Learn Your Favourite Language with us"
+                    class="flex-1 px-2 md:px-4 py-2 bg-purple-100 placeholder-gray-600 focus:outline-none w-24 md:w-full">
+                <button
+                    class="px-2 md:px-6 py-1 w-auto text-sm font-semibold text-white bg-purple-600 rounded-md whitespace-no-wrap">Get
+                    Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="sec5 p-10 container  m-auto border">
+        <div class="subtitle text-center relative">
+            <h1 class="inline-block text-3xl font-bold">Attestation</h1>
+            <span class="rounded absolute w-32 bg-purple-600 inline-block "></span>
+        </div>
+        <h3 class="font-bold mt-6 text-center text-sm">See what our students say about us</h3>
+
+        <div class="md:flex items-center justify-around md:flex-row-reverse mt-16">
+            <div class="w-full md:w-1/2">
+                <img src="./img/Grades_re_j7d6.svg" alt="">
+            </div>
+            <div class="w-full md:w-1/3">
+                <p class="text-gray-800 text-md mb-2">Lorem ipsum dolor sed sunt sapiente saepe dolorum veniam, saepe
+                    dolorum veniam, voluptas consequatur impedit aliquam</p>
+                <a href="#" class="text-purple-600 font-semibold">Biraj Patel</a>
+            </div>
+        </div>
+
+    </section> -->
+
+    <!-- <section class="sec6 p-10 container  m-auto border">
+        <div class="subtitle text-center relative">
+            <h1 class="inline-block text-2xl md:text-3xl font-bold">Pendaftaran</h1>
+            <span class="rounded absolute w-48 bg-purple-600 inline-block "></span>
+        </div>
+
+        <div class="flex items-center justify-around flex-col md:flex-row-reverse mt-20">
+            <div class="w-full md:w-1/3 mb-2">
+                <img src="./img/Mobile_posts_re_bpuw.svg" alt="">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="font-bold mb-3 text-2xl">Achive your daily <span class="text-purple-500">goals</span>
+                    anywhere, anytime</h2>
+                <p class="text-gray-800 text-md mb-5 max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Quibusdam illum autem iusto quisquam modi omnis repellat ullam. Accusamus quae voluptatum
+                    aperiam impedit ipsum voluptate officiis!</p>
+                <button class="px-6 py-2 text-sm font-semibold text-white bg-gray-900 mr-3 rounded-md">Google
+                    Play</button>
+                <button class="px-6 py-2 text-sm font-semibold text-white bg-gray-900 rounded-md">App Store</button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="sec7 p-10 container  m-auto border">
+        <div class="px-1 md:px-6">
+            <h2 class="text-2xl md:text-3xl font-semibold">Get in touch with us</h2>
+            <p class="text-gray-800 text-sm mb-5 max-w-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Autem dolore doloribus odio ipsum error!</p>
+        </div>
+        <div class="flex flex-col md:flex-row justify-evenly mt-10">
+            <div class="w-full md:w-1/3 p-6">
+                <img src="./img/3d.png" alt="">
+            </div>
+            <div class="w-full md:w-1/2 p-1 md:p-10">
+                <h2 class="text-3xl font-semibold mb-2">Connect me</h2>
+                <p class="text-gray-800 text-sm mb-6 max-w-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem dolore doloribus odio ipsum error!</p>
+                <button
+                    class="px-6 py-1 text-sm font-semibold text-white bg-indigo-500 mr-3 mb-2 rounded-md">Facebook</button>
+                <button
+                    class="px-6 py-1 text-sm font-semibold text-white bg-blue-500 mr-3 mb-2 rounded-md">Twitter</button>
+                <button class="px-6 py-1 text-sm font-semibold text-white bg-red-500 mr-3 rounded-md">Instgram</button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="sec8 p-10 container  m-auto">
+        <div class="subtitle text-center relative">
+            <h1 class="inline-block text-3xl font-bold">Our Students</h1>
+            <span class="rounded absolute w-32 bg-purple-600 inline-block "></span>
+        </div>
+        <div class="max-w-4xl my-10 mx-auto">
+            <img src="./img/bg-testimonials.jpg" alt="">
+        </div>
+    </section> -->
+
+    <footer class="bg-emerald-950">
+        <div class="container  m-auto px-2 py-10">
+            <h2 class="text-2xl md:text-3xl font-semibold text-white">Hubungi Kami</h2>
+            <br>
+            <p class="text-gray-300 mt-2 mb-4 text-sm max-w-2xl">
+                Contact Person resmi panitia Kevin: (082283812605)
+                <br>
+                Instagram resmi UPBU Letung (@bandara_letung)
+            </p>
+        </div>
+        <div class="text-center bg-emerald-800 p-1">
+            <small class="text-gray-200">Copyright &copy; 2024, UPBU Letung</small>
+        </div>
+    </footer>
+    <script>
+        const nav = document.getElementById("nav");
+        const menu = document.querySelector(".menu")
+        window.addEventListener("scroll", () => {
+            let offset = window.pageYOffset;
+            if (offset > 50) {
+                if (!nav.classList.contains("nav-bg-show")) {
+                    nav.classList.add("nav-bg-show")
+                }
+            } else {
+                if (nav.classList.contains("nav-bg-show")) {
+                    nav.classList.remove("nav-bg-show")
+                }
+            }
+        })
+
+        const navOpen = () => menu.classList.add("active");
+        const navClose = () => menu.classList.remove("active");
+
+    </script>
+</body>
+
+</html>
