@@ -853,6 +853,30 @@ video {
   width: 330px;
 }
 
+.w-\[full\] {
+  width: full;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[330\] {
+  width: 330;
+}
+
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-\[0px\] {
+  width: 0px;
+}
+
+.w-\[300rem\] {
+  width: 300rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1599,6 +1623,10 @@ video {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-\[330px\] {
+    width: 330px;
   }
 
   .md\:scale-150 {
