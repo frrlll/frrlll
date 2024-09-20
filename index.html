@@ -280,18 +280,18 @@
         // end_flag_off.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
         
         // Set achor url
-        if (currentDate.getTime() < race_pack.getTime()) {
-            pendaftaranUrls.forEach(url => url.href = "https://forms.gle/1mixMgkRAucdQDHq6");
-        } else {
-            pendaftaranUrls.forEach(url => url.href = "./announcement.html");
-        }
+        // if (currentDate.getTime() < race_pack.getTime()) {
+        //     pendaftaranUrls.forEach(url => url.href = "https://forms.gle/1mixMgkRAucdQDHq6");
+        // } else {
+        //     pendaftaranUrls.forEach(url => url.href = "./announcement.html");
+        // }
 
-        // Set redirect page
-        if (currentDate.getTime() > race_pack.getTime() && currentDate.getTime() < flag_off.getTime()) {
-            window.location.href = "./race_pack.html"
-        } else if (currentDate.getTime() > flag_off.getTime() && currentDate.getTime() < end_flag_off.getTime()) {
-            window.location.href = "./flag_off.html"
-        }
+        // // Set redirect page
+        // if (currentDate.getTime() > race_pack.getTime() && currentDate.getTime() < flag_off.getTime()) {
+        //     window.location.href = "./race_pack.html"
+        // } else if (currentDate.getTime() > flag_off.getTime() && currentDate.getTime() < end_flag_off.getTime()) {
+        //     window.location.href = "./flag_off.html"
+        // }
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
