@@ -42,7 +42,7 @@
                         <li><a href="#rute"
                                 class="px-4 py-2 mx-1 text-lg font-semibold text-gray-800 hover:text-emerald-800">Rute</a>
                         </li>
-                        <li><a href="https://forms.gle/1mixMgkRAucdQDHq6" target="_blank"
+                        <li><a id="pendaftaran_url" href="" target="_blank"
                                 class="px-4 py-2 mx-1 text-lg font-semibold text-gray-800 hover:text-emerald-800">Pendaftaran</a>
                         </li>
                     </ul>
@@ -80,7 +80,7 @@
                     <br>
                     Yuk, daftarkan dirimu sekarang dan jadi bagian dari gerakan ini!
                 </p>
-                <a href="https://forms.gle/1mixMgkRAucdQDHq6" target="_blank"
+                <a id="pendaftaran_url" href="" target="_blank"
                     class="px-6 py-2 text-sm font-semibold text-white bg-emerald-700 hover:bg-emerald-600 ease-in-out duration-200 mr-2 rounded-md">Daftar
                     Sekarang</a>
             </div>
@@ -159,7 +159,8 @@
         </div>
 
         <div class="flex justify-center md:p-10 mt-5 felx-col md:flex-row-reverse">
-            <img src="./img/rute_runhub.jpg" class="object-scale-down max-h-full drop-shadow-md rounded-md m-auto" alt="">
+            <img src="./img/rute_runhub.jpg" class="object-scale-down max-h-full drop-shadow-md rounded-md m-auto"
+                alt="">
         </div>
 
     </section>
@@ -190,7 +191,7 @@
 
                     <span class="text-blue-700">#HubrunUPBULetung2024 #TransportasiMajuNusantaraBaru</span>
                 </p>
-                <a href="https://forms.gle/1mixMgkRAucdQDHq6" target="_blank">
+                <a id="pendaftaran_url" href="" target="_blank">
                     <button
                         class="px-6 py-2 text-sm font-semibold text-white bg-emerald-700 hover:bg-emerald-600 mr-3 rounded-md">Daftar
                         Sekarang
@@ -263,6 +264,34 @@
         const navOpen = () => menu.classList.add("active");
         const navClose = () => menu.classList.remove("active");
 
+        // ------------------------------------------------------------------
+        
+        const pendaftaranUrls = document.querySelectorAll("[id='pendaftaran_url']");
+
+        const currentDate = new Date();
+        const race_pack = new Date('2024-09-26T00:00:05.000Z');
+        const flag_off = new Date('2024-09-27T00:00:00.000Z');
+        const end_flag_off = new Date('2024-09-29T00:00:00.000Z');
+
+        // Set the timezone to Jakarta (UTC+7)
+        currentDate.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+        race_pack.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+        flag_off.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+        end_flag_off.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+        
+        // Set achor url
+        if (currentDate.getTime() < race_pack.getTime()) {
+            pendaftaranUrls.forEach(url => url.href = "https://forms.gle/1mixMgkRAucdQDHq6");
+        } else {
+            pendaftaranUrls.forEach(url => url.href = "./announcement.html");
+        }
+
+        // Set redirect page
+        if (currentDate.getTime() > race_pack.getTime() && currentDate.getTime() < flag_off.getTime()) {
+            window.location.href = "./race_pack.html"
+        } else if (currentDate.getTime() > flag_off.getTime() && currentDate.getTime() < end_flag_off.getTime()) {
+            window.location.href = "./flag_off.html"
+        }
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

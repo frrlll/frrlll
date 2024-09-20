@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gambar</title>
+    <style>
+        /* Default styles for desktop and larger screens */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        img {
+            width: 100%;
+            max-height: 100vh;
+            /* object-fit: fill; */
+        }
+
+        /* Media query for mobile devices (max-width: 768px) */
+        @media (max-width: 768px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img id="image" src="img/flag_off.png" alt="Gambar">
+
+</body>
+
+</html>
