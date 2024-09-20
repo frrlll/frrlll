@@ -274,24 +274,30 @@
         const end_flag_off = new Date('2024-09-29T00:00:00.000Z');
 
         // Set the timezone to Jakarta (UTC+7)
-        // currentDate.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
-        // race_pack.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
-        // flag_off.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
-        // end_flag_off.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+        currentDate.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+        race_pack.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+        flag_off.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+        end_flag_off.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+
+        console.log(currentDate.getTime(), race_pack.getTime(), currentDate.getTime() < race_pack.getTime())
         
         // Set achor url
-        // if (currentDate.getTime() < race_pack.getTime()) {
-        //     pendaftaranUrls.forEach(url => url.href = "https://forms.gle/1mixMgkRAucdQDHq6");
-        // } else {
-        //     pendaftaranUrls.forEach(url => url.href = "./announcement.html");
-        // }
+        if (currentDate.getTime() < race_pack.getTime()) {
+            // pendaftaranUrls.forEach(url => url.href = "https://forms.gle/1mixMgkRAucdQDHq6");
+            console.log('test 1')
+        } else {
+            // pendaftaranUrls.forEach(url => url.href = "./announcement.html");
+            console.log('test 2')
+        }
 
-        // // Set redirect page
-        // if (currentDate.getTime() > race_pack.getTime() && currentDate.getTime() < flag_off.getTime()) {
-        //     window.location.href = "./race_pack.html"
-        // } else if (currentDate.getTime() > flag_off.getTime() && currentDate.getTime() < end_flag_off.getTime()) {
-        //     window.location.href = "./flag_off.html"
-        // }
+        // Set redirect page
+        if (currentDate.getTime() > race_pack.getTime() && currentDate.getTime() < flag_off.getTime()) {
+            // window.location.href = "./race_pack.html"
+            console.log('test 21')
+        } else if (currentDate.getTime() > flag_off.getTime() && currentDate.getTime() < end_flag_off.getTime()) {
+            // window.location.href = "./flag_off.html"
+            console.log('test 22')
+        }
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
