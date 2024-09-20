@@ -278,8 +278,6 @@
         race_pack.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
         flag_off.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
         end_flag_off.toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
-
-        console.log(currentDate.getTime(), race_pack.getTime(), currentDate.getTime() < race_pack.getTime())
         
         // Set achor url
         if (currentDate.getTime() < race_pack.getTime()) {
@@ -290,12 +288,14 @@
             console.log('test 2')
         }
 
+        console.log(currentDate.getTime(), race_pack.getTime(), currentDate.getTime() > race_pack.getTime(), currentDate.getTime() < flag_off.getTime())
+
         // Set redirect page
         if (currentDate.getTime() > race_pack.getTime() && currentDate.getTime() < flag_off.getTime()) {
-            // window.location.href = "./race_pack.html"
+            window.location.href = "./race_pack.html"
             console.log('test 21')
         } else if (currentDate.getTime() > flag_off.getTime() && currentDate.getTime() < end_flag_off.getTime()) {
-            // window.location.href = "./flag_off.html"
+            window.location.href = "./flag_off.html"
             console.log('test 22')
         }
     </script>
